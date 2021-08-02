@@ -1,0 +1,20 @@
+{
+    "name": "kokolabs/github-api",
+    "description": "Github API Client",
+    "type": "libary",
+    "require": {
+        "php": "^7.2.5",
+        "laravel/lumen-framework": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kokolabs\\GithubApi\\": "lib/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jonel C. Getigan",
+            "email": "jonel.getigan@gmail.com"
+        }
+    ]
+}
