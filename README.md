@@ -19,6 +19,10 @@ This project is based from [Developing RESTful APIs with Lumen (A PHP Micro-fram
 composer install
 ```
 
+### Setup Environment
+
+Edit ```.env.example``` especially the DB configurations and rename as ```.env```
+
 ### DB Migration
 
 ```
