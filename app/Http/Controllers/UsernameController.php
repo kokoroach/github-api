@@ -9,15 +9,18 @@ class UsernameController extends Controller
 {
     public function showOneUsername($username)
     {
+        $resp = null
+        $resp_code = 200
+        
         try
         {
-            $username = Username::findOrFail($username)
-            return response()->json($username, 200);
+            $username = Username::findOrFail($username);
         }
         catch(ModelNotFoundException $e)
         {
-            return response('Username not found', 400);
+            $resp = 'Username not found';
         }
+        return response()->json($response, $resp_code);
     }
 
     public function showUsernames(Request $request)
